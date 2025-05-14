@@ -40,12 +40,12 @@ Pseudo-elementos permitem estilizar partes específicas de um elemento.
 ```css
 /* Adiciona conteúdo antes do elemento */
 h1::before {
-  content: "🚀 ";
+  content: "\1F680";
 }
 
 /* Adiciona conteúdo depois do elemento */
 h1::after {
-  content: " 🌟";
+  content: "\1F603";
 }
 
 /* Seleciona a primeira letra */
