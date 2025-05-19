@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  padding: 1em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2em;
+  background-color: #f0f0f0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: #ddd;
+  padding: 1em;
+}
+
+.sidebar {
+  background-color: #ccc;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.caixa {
+  background-color: #eee;
+  padding: 2em;
+  font-size: 1rem;
+  margin-top: 1em;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Tablets (600px a 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/* Esconder sidebar em telas pequenas */
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Telas grandes */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/* Paisagem */
+@media (orientation: landscape) {
+  body {
+    background-color: lightyellow;
+  }
+}
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #ffffff;
+  }
+
+  .caixa {
+    background-color: #333333;
+  }
+
+  .menu {
+    background-color: #222;
+  }
+}
+
+/* Alta resolução (retina ou impressoras) */
+@media (min-resolution: 300dpi) {
+  img {
+    image-rendering: high-quality;
+  }
+}
+
+/* Dispositivos muito pequenos (ex: iPhone SE) */
+@media (max-width: 375px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Combinação de condições */
+@media screen and (max-width: 768px), (orientation: portrait) {
+  nav {
+    display: none;
+  }
+}
