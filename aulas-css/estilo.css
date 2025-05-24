@@ -1,0 +1,130 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fonte-estilizada-titulo-h1 {
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 400;
+    font-style: normal;
+  } 
+
+/* seletor por tag */
+p {
+    color: #6A5ACD;
+    font-size: 14px;
+    background-color: #FFD700;
+}
+
+/* seletor por id */
+#fomulario {
+    color: #8B0000;
+    font-size: 16px;
+    background-color: #E6E6FA;
+}
+
+/* seletor por classe */
+.fundo_rosa {
+    color: #fff;
+    font-size: 16px;
+    background-color: #DB7093;
+}
+
+.link_branco {
+    color: #fff;
+    text-decoration: none;
+}
+
+.link_branco:hover{
+    color: #6A5ACD;
+    font-size: 20px;
+}
+
+.container {
+    border: 1px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.img-container {
+    border: 1px solid blue;
+    padding: 20px;
+    display: inline-flex;
+    width: 100%;
+}
+
+.imagens {
+    width: 50vh ;
+    height: auto;
+}
+
+.borda-amarela {
+    border-width: 5px;
+    border-style: dotted;
+    border-top-color: yellow;
+    border-left-color: magenta;
+    border-top-style: solid;
+    border-left-style: double;
+}
+
+.borda-rosa {
+    border: 4px dotted pink;
+}
+
+.alinhamento-central {
+    margin: 0 auto;
+    display: table;
+}
+
+button:hover {
+  background-color: green;
+  color: white; 
+}
+
+input:focus {
+  background-color: cyan;
+  font-size: 20px;
+}
+
+li:nth-child(3) {
+  color: orange;
+}
+
+li:first-child{
+    color: yellow;
+}
+
+li:last-child{
+    color: red;
+}
+
+.estilo-checkbox:checked {
+  accent-color: blue; /* cor da caixinha (suportado nos navegadores modernos) */
+}
+
+.estilo-checkbox:checked ~ .texto {
+    color: yellow;
+}
+
+.item-selecionado::after {
+  content: ""; /* padrão: nada aparece */
+  margin-left: 8px;
+  color: yellow; 
+}
+
+.estilo-checkbox:checked + .item-selecionado::after {
+  content: "\1F7E2"; /* texto exibido quando marcado */
+  color: yellow;
+}
+
+h3::after {
+    content: "\1F347";
+}
+
+h3::before {
+    content: "\1F349";
+}
+
+li::first-letter {
+    font-size: 20px;
+    color: magenta;
+}
